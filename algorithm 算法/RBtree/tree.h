@@ -1,6 +1,6 @@
 #pragma once
 #include<iostream>
-
+using namespace std;
 
 //#define red 0;
 const int red = 0;
@@ -8,14 +8,13 @@ const int red = 0;
 const int black = 1;
 
 struct treeNode {
-	treeNode* father=nullptr;
-	treeNode* left=nullptr;
-	treeNode* right=nullptr;
+	treeNode* father = nullptr;
+	treeNode* left = nullptr;
+	treeNode* right = nullptr;
 
-	int key=0;
-	int color=black;
+	int key = 0;
+	int color = black;
 };
-
 
 
 class tree
@@ -37,12 +36,8 @@ class tree
 	void insertFixup(treeNode* z);
 	void treeInsert(treeNode* z);
 	
-
-	//删除
-	void treeDelete(treeNode* x);
+	//查找
+	treeNode* find(int key);
 
 };
-/*还有删除没有实现
-
-
 
