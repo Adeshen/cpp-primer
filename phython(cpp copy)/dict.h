@@ -46,6 +46,19 @@ public:
 
 
 	}
+	W operator[](T key) {
+		int i = 0;
+		while (i < this->space) {
+			if (this->dict_key == key) {
+				break;
+			}
+			i++;
+		}
+		return this->dict_text[i];
+
+	}
+
+	
 
 
 	void show() {
